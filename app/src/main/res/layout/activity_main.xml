@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lcinshu.demo_lcinshu.MainActivity">
+
+    <TextView
+
+        android:id="@+id/speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/speech_size"
+        android:text="语音内容为："
+        />
+
+
+    <EditText
+
+        android:id="@+id/speech_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/speech"
+        android:background="@drawable/exittext"
+        android:hint="此处显示语音内容"
+        />
+
+
+    <Button
+
+        android:id="@+id/speech_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="开始语音"
+        />
+
+    <Button
+
+        android:id="@+id/clear_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/speech_content"
+        android:text="清空内容"
+        />
+
+    <TextView
+
+        android:id="@+id/lat_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/clear_edittext"
+        android:text="请选择语音引擎种类"
+        />
+
+    <TextView
+
+        android:id="@+id/lat_category_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lat_category"
+        android:textSize="16dp"
+        />
+
+
+    <RadioGroup
+        android:layout_below="@id/lat_category_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/radiobt_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离线"
+            />
+
+        <RadioButton
+
+            android:id="@+id/radiobt_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>
