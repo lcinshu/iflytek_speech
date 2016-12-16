@@ -80,8 +80,6 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        //SpeechUtility.createUtility(this,SpeechConstant.APPID+"=584f6073");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
